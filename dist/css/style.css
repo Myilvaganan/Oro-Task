@@ -1,0 +1,442 @@
+/* Variables */
+/* mixins */
+/* Scrollbar style */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8 !important;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* NavBar */
+.navbar-mobile {
+  display: none !important;
+}
+
+.navbar-brand {
+  cursor: pointer;
+}
+
+/* Side-Section Users Lists */
+.users-list {
+  width: 100%;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.users-list form input {
+  width: 100%;
+  border: none;
+  background-color: #f0f0f0;
+  padding: 0.7rem;
+}
+.users-list form input:focus {
+  outline: none;
+}
+
+/*  Right-side--page Styling */
+.partner-details {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.partner-details h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.partner-details .partner-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: white;
+  border: 1px solid #eeeeee;
+  padding: 1rem 0;
+}
+.partner-details .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-start;
+      -ms-flex-pack: space-start;
+          justify-content: space-start;
+  color: #575757;
+  width: 80%;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-start;
+}
+.partner-details .name,
+.partner-details .id,
+.partner-details .mobile,
+.partner-details .status {
+  color: #000000;
+  font-weight: 700;
+  font-size: 16px;
+}
+.partner-details .btn-call {
+  border-radius: 50px;
+}
+
+.card-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem;
+  border-right: 1px solid #eeeaea;
+  border-bottom: 1px solid #eeeaea;
+  background-color: #fff;
+  /* Typography Styling */
+  /* Side Menu -- Partner's  Details Styling */
+  /* Icons Style */
+}
+.card-parent:hover {
+  cursor: pointer;
+}
+.card-parent.active {
+  background-color: #fff7ea;
+}
+.card-parent .full-status,
+.card-parent .contents {
+  font-size: 12px;
+  line-height: 5px;
+}
+.card-parent .contents {
+  color: #000000;
+  opacity: 0.6;
+}
+.card-parent .title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.card-parent .green {
+  background-color: #16a085;
+}
+.card-parent .red {
+  background-color: #cf2121;
+}
+.card-parent .yellow {
+  background-color: #f0b859;
+}
+.card-parent .status-icons {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* Map Styling */
+#map {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 348px;
+  margin-left: 2rem;
+}
+
+.travelLogs {
+  width: 97%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.travelLogs .travelLogs--section {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 1px solid #eeeeee;
+  background-color: white;
+}
+.travelLogs .travelStop > span {
+  color: #575757;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+.travelLogs .travelStop > p {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+.travelLogs .arrow-left {
+  display: none;
+}
+
+@media screen and (max-width: 1097px) {
+  .contents {
+    line-height: 1rem !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar-desktop {
+    display: none !important;
+  }
+
+  .navbar-mobile {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .navbar-mobile button {
+    font-weight: 800;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  .navbar-mobile .nav-mobile-menu-items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #eeeeee;
+    z-index: 999999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 100vh;
+    width: 250px;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    padding-left: 30px;
+    padding-top: 55px;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  }
+  .navbar-mobile .nav-mobile-menu-items.active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .navbar-mobile .nav-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 90%;
+    list-style: none;
+  }
+  .navbar-mobile .nav-ul li {
+    padding-top: 10px;
+    line-height: 5px;
+    width: 100%;
+    font-weight: 700;
+  }
+  .navbar-mobile .nav-ul li p {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    opacity: 0.6;
+  }
+  .navbar-mobile .nav-mobile-menu-items-2 {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .navbar-mobile .nav-mobile-menu-items-2 p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 1rem;
+  }
+  .navbar-mobile .nav-mobile-menu-items-2 p:first-child {
+    width: 100%;
+    padding-bottom: 1rem;
+    border-bottom: 1px grey solid;
+  }
+
+  .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 100000000;
+    cursor: pointer;
+  }
+  .hamburger span {
+    width: 20px;
+    height: 3px;
+    margin: 2px;
+    background-color: black;
+  }
+
+  .users-list form input {
+    display: none;
+  }
+
+  .nav-detail {
+    display: none;
+  }
+
+  .partner-details {
+    margin-left: 0rem;
+  }
+  .partner-details h2 {
+    display: none;
+  }
+
+  .card-parent {
+    margin: 1rem;
+  }
+
+  .partner-info,
+.card-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .travelLogs {
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  .travelLogs .travelLogs--section {
+    width: 85% !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+  }
+  .travelLogs .travelLogs--section > div {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .travelLogs .travelStop span,
+.travelLogs .travelStop p {
+    font-size: 0.8rem;
+  }
+  .travelLogs i {
+    cursor: pointer;
+  }
+  .travelLogs .arrow-left {
+    display: block;
+  }
+
+  .main-section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .partner-details {
+    width: 95%;
+    height: auto;
+  }
+  .partner-details h2 {
+    padding-left: 10px;
+  }
+
+  .partner-info {
+    width: 105%;
+    height: auto;
+    position: relative;
+  }
+  .partner-info .card-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .partner-info .card-info span,
+.partner-info .card-info p {
+    font-size: 0.8rem;
+  }
+  .partner-info .partner-call {
+    position: absolute;
+    top: 90%;
+    display: inline-block;
+  }
+  .partner-info .partner-call button {
+    height: 30px !important;
+    font-size: 0.9rem;
+    padding-bottom: 1.5rem !important;
+  }
+
+  #map {
+    margin: 2rem auto;
+    width: 100%;
+    height: 384px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oro Task - HomePage</title>
+    <!-- Stylesheet File -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <!-- Google Font Integration -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Css Integration -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- FontAwesome Icon Integration -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-light bg-white navbar-desktop">
+        <a class="navbar-brand">
+            <img src="./assets/logo.png" alt="Oro-logo" width="80px" height="35.14px">
+        </a>
+        <div class="nav-detail">Logged in as
+            <span class="font-weight-bold mr-2">dev@orocorp.in</span>
+            <button class="btn btn-danger btn-sm my-2 my-sm-0" type="button">Logout</button>
+        </div>
+
+    </nav>
+
+    <nav class="navbar navbar-light bg-white navbar-mobile">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a class="navbar-brand">
+            <img src="./assets/logo.png" alt="Oro-logo" width="80px" height="35.14px">
+        </a>
+        <div class="nav-btn-mobile">
+            <button class="btn btn-warning btn-sm my-2 my-sm-0 navbar-btn" type="button">All Partners</button>
+        </div>
+        <div class="nav-mobile-menu-items">
+            <ul class="nav-ul">
+                <li>
+                    <p>Logged in as</p><span>dev@orocorp.in</span>
+                </li>
+
+            </ul>
+
+            <div class="nav-mobile-menu-items-2">
+                <p>All Partners <i class="fa fa-angle-right arrow-menu" aria-hidden="true"></i></p>
+                <p>Logout <i class="fa fa-angle-right arrow-menu" aria-hidden="true"></i></p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Page -->
+    <main class="container-fluid main">
+        <!-- Side-Section -->
+        <div class="row">
+            <section class="col-lg-2 users-list">
+
+                <form action="">
+                    <input type="search" name="search-items" id="searchBar" placeholder="Search Partners" />
+                </form>
+                <div class="users-list--data"></div>
+            </section>
+            <!-- Main Section-->
+            <section class="col-lg-10 main-section">
+                <div class=" partner-details">
+                    <h2>PARTNER DETAILS</h2>
+                    <div class="partner-info">
+                        <div class="card-info">
+                            <div class="card-partner--name mx-4">
+                                <span>NAME</span>
+                                <p class="name my-1">Myilvaganan S</p>
+                            </div>
+                            <div class="card-partner--id mx-4">
+                                <span>PARTNER ID</span>
+                                <p class="id my-1">SLM636012</p>
+                            </div>
+                            <div class="card-partner--mobile mx-4">
+                                <span>MOBILE NUMBER</span>
+                                <p class="mobile my-1">8925162153</p>
+                            </div>
+                            <div class="card-partner--status mx-4">
+                                <span>STATUS</span>
+                                <p class="status my-1">VISIT ERD215063</p>
+                            </div>
+                        </div>
+                        <div class="partner-call">
+                            <button class="btn btn-call btn-md btn-warning font-weight-bold">Call Partner</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Google Maps Integration-->
+                <div id="map"></div>
+
+
+                <!-- Travel Logs -->
+
+                <div class=" travelLogs">
+                    <i class="fa fa-arrow-circle-left arrow-left" aria-hidden="true"></i>
+
+                    <div class=" travelLogs--section">
+                        <div class="travelStop">
+                            <span>STOP NO.</span>
+                            <p>1</p>
+                        </div>
+                        <div class="travelStop">
+                            <span>LAT</span>
+                            <p>13.0296</p>
+                        </div>
+                        <div class="travelStop">
+                            <span>LONG</span>
+                            <p>80.1608</p>
+                        </div>
+                        <div class="travelStop">
+                            <span>TIME</span>
+                            <p>02:00 PM</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-arrow-circle-right arrow-left" aria-hidden="true"></i>
+
+                    <div class=" travelLogs--section">
+                        <div class="travelStop">
+                            <span>STOP NO.</span>
+                            <p>2</p>
+                        </div>
+                        <div class="travelStop">
+                            <span>LAT</span>
+                            <p>13.0756</p>
+                        </div>
+                        <div class="travelStop">
+                            <span>LONG</span>
+                            <p>80.263</p>
+                        </div>
+                        <div class="travelStop">
+                            <span>TIME</span>
+                            <p>05:22 PM</p>
+                        </div>
+                    </div>
+                    <div class=" travelLogs--section">
+                        <div class="travelStop">
+                            <span>STOP NO.</span>
+                            <p>3</p>
+                        </div>
+                        <div class="travelStop">
+                            <span>LAT</span>
+                            <p>13.078</p>
+                        </div>
+                        <div class="travelStop">
+                            <span>LONG</span>
+                            <p>80.208</p>
+                        </div>
+                        <div class="travelStop">
+                            <span>TIME</span>
+                            <p>11:55 PM</p>
+                        </div>
+                    </div>
+                    <div class="travelLogs--section">
+                        <div class="travelStop">
+                            <span>STOP NO.</span>
+                            <p>4</p>
+                        </div>
+                        <div class="travelStop">
+                            <span>LAT</span>
+                            <p>13.0802</p>
+                        </div>
+                        <div class="travelStop">
+                            <span>LONG</span>
+                            <p>80.0802</p>
+                        </div>
+                        <div class="travelStop">
+                            <span>TIME</span>
+                            <p>12:55PM</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+        </script>
+
+    <!-- Script File -->
+    <script type="text/javascript" src="./script/script.js"></script>
+    <!-- Map Style -->
+    <script>
+        let marker;
+
+        function initMap() {
+            var options = {
+                zoom: 12,
+                center: {
+                    lat: 13.0656,
+                    lng: 80.1608
+                },
+                mapTypeId: "terrain",
+            };
+            const map = new google.maps.Map(document.getElementById("map"), options);
+            const flightPlanCoordinates = [{
+                lat: 13.0296,
+                lng: 80.1608
+            },
+            {
+                lat: 13.0756,
+                lng: 80.2638
+            },
+            {
+                lat: 13.078,
+                lng: 80.208
+            },
+            {
+                lat: 13.0802,
+                lng: 80.0802
+            },
+            ];
+
+            flightPlanCoordinates.map(coord => addMarker(coord));
+
+            function addMarker(coords) {
+
+                const image = "./assets/marker.png"
+                var marker = new google.maps.Marker({
+                    position: coords,
+                    map: map,
+                    draggable: false,
+                    animation: google.maps.Animation.DROP,
+                    icon: image
+                });
+                marker.addListener("click", toggleBounce);
+            }
+            const flightPath = new google.maps.Polyline({
+                path: flightPlanCoordinates,
+                geodesic: true,
+                strokeColor: "#000",
+                strokeOpacity: 1.0,
+                strokeWeight: 3.5,
+            });
+
+            flightPath.setMap(map);
+        }
+
+        function toggleBounce() {
+            if (marker.getAnimation() !== null) {
+                marker.setAnimation(null);
+            } else {
+                marker.setAnimation(google.maps.Animation.BOUNCE);
+            }
+        }
+    </script>
+    <!-- Google Map -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqKU70-jbncHuBEkg1zwsy61KTGMZhAsE&callback=initMap"
+        async>
+        </script>`
+</body>
+
+</html>
