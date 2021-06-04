@@ -4,6 +4,13 @@
 <h1>Step:1</h1>
 <p>Clone the Repository or Download the Repository</p>
 
+Technologies Used:
+--> Html 5
+--> Sass
+--> Javascript
+--> Google Map API
+--> Javascript DOM Manipulation
+
 <h1>Step:2</h1>
 <p>Run with localhost for.eg., http://127.0.0.1:5500/ </p>
 
